@@ -1,7 +1,5 @@
-const Details = () => {
-  return (
-    <h2>sjhdjhd</h2>
-  )
-}
+const Details = () => (
+  <h2>sjhdjhd</h2>
+);
 
-export default Details
+export default Details;

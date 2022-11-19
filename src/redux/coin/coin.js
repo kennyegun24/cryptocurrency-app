@@ -1,7 +1,7 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 
 // ACTIONS
-const Get_COINS = 'bookstore/src/redux/Get_COINS';
+const GET_COINS = 'bookstore/src/redux/GET_COINS';
 
 // DEFAULT BOOKS
 
@@ -9,7 +9,7 @@ const displayCoins = [];
 // REDUCERS
 const bookReducer = (state = displayCoins, action) => {
   switch (action.type) {
-    case Get_COINS:
+    case GET_COINS:
       return action.unique;
     default:
       return state;
@@ -18,15 +18,15 @@ const bookReducer = (state = displayCoins, action) => {
 
 // ACTIONS CREATORS
 
-const fetchCoins = createAsyncThunk(Get_COINS, async (pos, { dispatch }) => {
+const fetchCoins = createAsyncThunk(GET_COINS, async (pos, { dispatch }) => {
   const response = await fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=250&page=1&sparkline=false');
   const data = await response.json();
   const coins = data.map((key) => ({
     id: key,
-  }))
-  console.log(data)
+  }));
+  console.log(data);
   dispatch({
-    type: Get_COINS,
+    type: GET_COINS,
     unique: coins,
   });
 });
