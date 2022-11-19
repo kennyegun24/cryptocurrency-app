@@ -1,0 +1,36 @@
+.flex {
+  display: flex;
+}
+
+.jstCnt {
+  justify-content: center;
+}
+
+.aliCnt {
+  align-items: center;
+}
+
+.flxWrp {
+  flex-wrap: wrap;
+}
+
+.gap10px {
+  gap: 10px;
+}
+
+.sec1 {
+  flex-basis: 40%;
+  flex-grow: 1;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #d1caca;
+}
+
+.img {
+  width: 50px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
