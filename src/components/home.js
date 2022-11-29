@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { NavLink, useParams } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { FaSearch } from 'react-icons/fa';
 import { fetchCoins } from '../redux/coin/coin';
 import Display from './display';
@@ -8,15 +8,13 @@ import Display from './display';
 const Home = () => {
   const dispatch = useDispatch();
 
-  const params = useParams();
   const { coins, status } = useSelector((state) => state.coins);
   const [search, setSearch] = useState('');
-  const url = `https://api.coingecko.com/api/v3/coins/${params.coinId}`;
   useEffect(() => {
     if (status === null) {
-      dispatch(fetchCoins(url));
+      dispatch(fetchCoins());
     }
-  }, [params.coinId, dispatch]);
+  }, [dispatch]);
 
   return (
     <div>
