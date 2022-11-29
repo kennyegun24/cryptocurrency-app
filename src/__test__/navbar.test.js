@@ -2,8 +2,8 @@ import '@testing-library/jest-dom';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { render, screen } from '@testing-library/react';
-import store from '../redux/configureStore'
-import Navbar from '../components/navbar'
+import store from '../redux/configureStore';
+import Navbar from '../components/navbar';
 
 describe('Navbar component testing', () => {
   test('Does the Navbar component match snapshot', () => {
