@@ -57,17 +57,13 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+  # 📖 [Cryptocurrency Hub] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
+> This app is a cryptocurrency price tracker. It was created with redux and react for the fronend and consumed data from coingecko's api to render information to the page
 
-**[your_project__name]** is a...
+## 🛠 Built With <a name="built-with">React and Redux</a>
 
-## 🛠 Built With <a name="built-with"></a>
-
-### Tech Stack <a name="tech-stack"></a>
-
-> Describe the tech stack and include only the relevant sections that apply to your project.
+### Tech Stack <a name="tech-stack">Frontend</a>
 
 <details>
   <summary>Client</summary>
@@ -76,29 +72,13 @@ After you're finished please remove all the comments and instructions!
   </ul>
 </details>
 
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
-  </ul>
-</details>
-
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **[Full info about each token]**
+- **[Live price of each token]**
+- **[Loading and error message incase of any badconnection form api]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -108,7 +88,7 @@ After you're finished please remove all the comments and instructions!
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- TBD
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -116,7 +96,6 @@ After you're finished please remove all the comments and instructions!
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
 
 To get a local copy up and running, follow these steps.
 
@@ -184,11 +163,6 @@ Example command:
 
 ### Deployment
 
-You can deploy this project using:
-
-<!--
-Example:
-
 ```sh
 
 ```
@@ -204,15 +178,8 @@ Example:
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/kennyegun24)
+- Twitter: [@twitterhandle](https://twitter.com/kenny_eLiasUTD)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -222,9 +189,10 @@ Example:
 
 > Describe 1 - 3 features you will add to the project.
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] **[Add full description to each token]**
+- [ ] **[Add a brief history of each  token]**
+- [ ] **[Add a news section too]**
+- [ ] **[Style the app properly]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
