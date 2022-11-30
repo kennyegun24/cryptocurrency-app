@@ -1,0 +1,88 @@
+.flex {
+  display: flex;
+}
+
+.jstCnt {
+  justify-content: center;
+}
+
+.aliCnt {
+  align-items: center;
+}
+
+.flxCnt {
+  flex-direction: column;
+}
+
+.flxWrp {
+  flex-wrap: wrap;
+}
+
+.gap10px {
+  gap: 10px;
+}
+
+.sec1 {
+  flex-basis: 40%;
+  flex-grow: 1;
+  text-align: center;
+  background: red;
+  border: 1px solid #d1caca;
+  margin: 0.2%;
+}
+
+.img {
+  width: 50px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navDiv {
+  text-align: left;
+  display: flex;
+  justify-content: left;
+}
+
+.link {
+  font-size: 50px;
+  text-decoration: none;
+}
+
+.coinLink {
+  text-decoration: none;
+}
+
+.link:focus {
+  color: initial;
+}
+
+.coinLink:focus {
+  color: initial;
+}
+
+.detailPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.detailPage span {
+  font-size: 20px;
+  font-family: sans-serif;
+  padding: 5%;
+  border: 1px solid #d1caca;
+  width: 80%;
+  margin: 1%;
+  background: red;
+  color: #fff;
+}
