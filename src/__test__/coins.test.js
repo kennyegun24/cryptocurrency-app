@@ -1,4 +1,4 @@
-import coinSlice, { fetchCoins } from "../redux/coin/coin";
+import coinSlice, { fetchCoins } from '../redux/coin/coin';
 
 const initial = {
   crypto: [
@@ -142,5 +142,4 @@ describe('Check if the reducer works properly', () => {
   test('Test if coins are loaded correctly', () => {
     expect(coinSlice(initial, fetchCoins(loadedCoin)).crypto).toEqual(loadedCoin);
   });
-
 });
