@@ -67,6 +67,7 @@ After you're finished please remove all the comments and instructions!
 
 <details>
   <summary>Client</summary>
+  <summary>Api</summary>
   <ul>
     <li><a href="https://reactjs.org/">React.js</a></li>
   </ul>
@@ -86,9 +87,7 @@ After you're finished please remove all the comments and instructions!
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
-
-- [Live Demo](kennys-cryptohub.netlify.app)
+> <a href="https://kennys-cryptohub.netlify.app">Live Demo</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
