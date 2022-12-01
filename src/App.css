@@ -22,7 +22,7 @@
   gap: 10px;
 }
 
- .sec1 {
+.sec1 {
   text-align: center;
   background: red;
 }
@@ -167,7 +167,7 @@ body {
   color: #fff;
 }
 
-@media(min-width: 760px) {
+@media (min-width: 760px) {
   .flexIt {
     display: flex;
     justify-content: space-evenly;
@@ -182,7 +182,7 @@ body {
     top: 60px;
     background: transparent;
   }
-  
+
   .searchIcon {
     background: red;
     padding: 5px;
