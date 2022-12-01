@@ -5,13 +5,80 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
+      <div>
+        <div
+          class="imgDtDv"
+        >
+          <img
+            alt="img"
+            class="imgDt"
+          />
+        </div>
+        <div
+          class="detailPage"
+        >
+          <span>
+             BNB
+          </span>
+          <span>
+             BNB
+          </span>
+          <span>
+            market cap:
+             NaN
+          </span>
+          <span>
+            price:
+             NaN
+          </span>
+          <span>
+            ATH:
+             732957.00000
+          </span>
+          <span>
+            Total Supply: 166801148.0000000000000000
+          </span>
+          <span>
+            Circulating Supply:
+             asdjds
+          </span>
+          <span>
+            Total Volume:
+             38434343
+          </span>
+          <span>
+            Cap Rank:
+             4838
+          </span>
+          <span>
+            High 24hr:
+             5555
+          </span>
+          <span>
+            Low 24hr:
+             222
+          </span>
+          <span>
+            Price Change 24hr:
+             
+          </span>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div>
       <div
-        class="detailPage"
+        class="imgDtDv"
       >
         <img
           alt="img"
-          class="img"
+          class="imgDt"
         />
+      </div>
+      <div
+        class="detailPage"
+      >
         <span>
            BNB
         </span>
@@ -58,61 +125,6 @@ Object {
            
         </span>
       </div>
-    </div>
-  </body>,
-  "container": <div>
-    <div
-      class="detailPage"
-    >
-      <img
-        alt="img"
-        class="img"
-      />
-      <span>
-         BNB
-      </span>
-      <span>
-         BNB
-      </span>
-      <span>
-        market cap:
-         NaN
-      </span>
-      <span>
-        price:
-         NaN
-      </span>
-      <span>
-        ATH:
-         732957.00000
-      </span>
-      <span>
-        Total Supply: 166801148.0000000000000000
-      </span>
-      <span>
-        Circulating Supply:
-         asdjds
-      </span>
-      <span>
-        Total Volume:
-         38434343
-      </span>
-      <span>
-        Cap Rank:
-         4838
-      </span>
-      <span>
-        High 24hr:
-         5555
-      </span>
-      <span>
-        Low 24hr:
-         222
-      </span>
-      <span>
-        Price Change 24hr:
-         
-      </span>
     </div>
   </div>,
   "debug": [Function],

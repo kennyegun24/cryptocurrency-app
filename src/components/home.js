@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom';
 import { FaSearch } from 'react-icons/fa';
 import { fetchCoins } from '../redux/coin/coin';
 import Display from './display';
+import img from '../assets/R.jpg';
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -25,20 +26,25 @@ const Home = () => {
         </div>
       ) : (
         <>
-          <input
-            type="text"
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-            placeholder="search"
-          />
-          <FaSearch />
-
-          <div className="flex jstCnt flxWrp aliCnt ">
+          <div className="imgDv">
+            <img className="imgBg" src={img} alt="" />
+          </div>
+          <div className="searchDiv">
+            <input
+              className="search"
+              type="text"
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              placeholder="search"
+            />
+            <FaSearch className="searchIcon" />
+          </div>
+          <div className="grid">
             {coins.filter((searchCoin) => searchCoin.name.toLowerCase()
               .includes(search.toLowerCase())
               || searchCoin.symbol.toLowerCase().includes(search.toLowerCase()))
               .map((coins) => (
-                <div className="flxCnt flex jstCnt aliCnt flxWrp gap10px sec1" key={coins.id}>
+                <div className=" sec1" key={coins.id}>
                   <NavLink className="coinLink" state={coins} to="/display">
                     <Display
                       key={coins.id}

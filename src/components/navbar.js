@@ -1,12 +1,15 @@
 import { Link } from 'react-router-dom';
+import { FaLessThan } from 'react-icons/fa';
 
 const Navbar = () => (
   <nav className="nav">
     <div className="navDiv">
-      <Link className="link" to="/">&times;</Link>
+      <Link className="link" to="/">
+        <FaLessThan />
+      </Link>
     </div>
-    <div>
-      <h3 className="header">Cryptocurrency Hub</h3>
+    <div className="header">
+      <h3 className="head">Cryptocurrency Hub</h3>
     </div>
 
   </nav>
