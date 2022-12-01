@@ -23,16 +23,44 @@
 }
 
 .sec1 {
-  flex-basis: 40%;
-  flex-grow: 1;
   text-align: center;
   background: red;
-  border: 1px solid #d1caca;
-  margin: 0.2%;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 0.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  padding: 20px;
 }
 
 .img {
   width: 50px;
+}
+
+.imgBg {
+  width: 90%;
+  border-radius: 40%;
+}
+
+.imgDt {
+  width: 50px;
+  top: 45px;
+}
+
+.imgDv {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 70px;
+}
+
+.imgDtDv {
+  background: #fff;
+  text-align: center;
+  margin-top: 62px;
+  top: 60px;
+  position: sticky;
 }
 
 * {
@@ -42,14 +70,30 @@
 
 .nav {
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  padding: 10px;
 }
 
 .navDiv {
-  text-align: left;
+  width: fit-content;
   display: flex;
-  justify-content: left;
+  justify-content: flex-start;
+}
+
+.header {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  color: #111;
+  font-family: sans-serif;
+}
+
+.head {
+  font-size: 25px;
 }
 
 .link {
@@ -76,6 +120,13 @@
   align-items: center;
 }
 
+body {
+  background-image: linear-gradient(180.45deg, rgba(182, 175, 175, 0) 2.75%, rgba(85, 82, 82, 0.9) 15.94%), url('./assets/R.jpg');
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
 .detailPage span {
   font-size: 20px;
   font-family: sans-serif;
@@ -85,4 +136,58 @@
   margin: 1%;
   background: red;
   color: #fff;
+}
+
+.detailPage span:nth-child(even) {
+  background: rgb(235, 118, 118);
+}
+
+.search {
+  width: 100%;
+  border-radius: 5px 0 0 5px;
+  padding: 4px;
+  font-size: 16px;
+}
+
+.searchDiv {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  padding: 10px 5% 10px 5%;
+  position: sticky;
+  top: 60px;
+  background: #fff;
+}
+
+.searchIcon {
+  background: red;
+  padding: 5px;
+  font-size: 20px;
+  border-radius: 0 5px 5px 0;
+  color: #fff;
+}
+
+@media (min-width: 760px) {
+  .flexIt {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .searchDiv {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    padding: 10px 5% 10px 5%;
+    position: sticky;
+    top: 60px;
+    background: transparent;
+  }
+
+  .searchIcon {
+    background: red;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 0 5px 5px 0;
+    color: #fff;
+  }
 }
