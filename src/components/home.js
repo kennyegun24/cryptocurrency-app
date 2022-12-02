@@ -15,7 +15,7 @@ const Home = () => {
     if (status === null) {
       dispatch(fetchCoins());
     }
-  }, [dispatch]);
+  }, [status, dispatch]);
 
   return (
     <div>
