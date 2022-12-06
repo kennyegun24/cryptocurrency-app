@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { FaSearch } from 'react-icons/fa';
 import { fetchCoins } from '../redux/coin/coin';
 import Display from './display';
 import img from '../assets/R.jpg';
+import Details from './Details';
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -45,7 +46,7 @@ const Home = () => {
               || searchCoin.symbol.toLowerCase().includes(search.toLowerCase()))
               .map((coins) => (
                 <div className=" sec1" key={coins.id}>
-                  <NavLink className="coinLink" state={coins} to="/display">
+                  <Link className="coinLink" to={`/display/${coins.id}`} element={<Details />} key={coins.id}>
                     <Display
                       key={coins.id}
                       img={coins.image}
@@ -55,7 +56,7 @@ const Home = () => {
                       atl={coins.atl}
                       price={coins.current_price}
                     />
-                  </NavLink>
+                  </Link>
                 </div>
               ))}
           </div>
